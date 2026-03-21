@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RahulShettyAcademySmokeSuite">
+	<listeners>
+		<listener class-name="listeners.TestListener"></listener>
+	</listeners>
+	<test name="SmokeTest">
+		<groups>
+		<run>
+			<include name="Smoke"></include>
+		</run>
+		</groups>
+		<classes>
+			<class name="tests.OrderProductTest"></class>
+			<class name="tests.ValidateErrorsTest"></class>
+		</classes>
+	</test>
+</suite>

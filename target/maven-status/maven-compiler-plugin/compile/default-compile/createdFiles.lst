@@ -1,0 +1,9 @@
+pageobjects\OrdersPage.class
+pageobjects\ProductCatalaguePage.class
+utils\ExtentReporterNG.class
+pageobjects\TopNavigationPage.class
+pageobjects\CheckoutPage.class
+pageobjects\LandingPage.class
+pageobjects\CartPage.class
+pageobjects\ConfirmationPage.class
+utils\WaitUtils.class

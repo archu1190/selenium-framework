@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RahulShettyAcademy]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="OrderProduct(failed)">
+    <classes>
+      <class name="tests.OrderProductTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyOrder"/>
+          <include name="addToCartAndOrder"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- tests.OrderProductTest -->
+    </classes>
+  </test> <!-- OrderProduct(failed) -->
+  <test thread-count="5" name="ErrorValidation(failed)">
+    <classes>
+      <class name="tests.ValidateErrorsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="addToCartAndOrder1"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- tests.ValidateErrorsTest -->
+    </classes>
+  </test> <!-- ErrorValidation(failed) -->
+</suite> <!-- Failed suite [RahulShettyAcademy] -->

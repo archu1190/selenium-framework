@@ -1,0 +1,18 @@
+2026-03-21 09:59:07 INFO  base.BaseTest - Test Execution Started
+2026-03-21 09:59:10 INFO  base.BaseTest - Test Started: addToCartAndOrder
+2026-03-21 09:59:20 INFO  base.BaseTest - Test Passed: addToCartAndOrder
+2026-03-21 09:59:21 INFO  base.BaseTest - Test Started: verifyOrder
+2026-03-21 09:59:35 ERROR base.BaseTest - Test Failed: verifyOrder
+2026-03-21 09:59:35 INFO  base.BaseTest - Driver fetched successfully
+2026-03-21 09:59:35 INFO  base.BaseTest - Screenshot captured
+2026-03-21 09:59:35 INFO  base.BaseTest - Test Execution Finished
+2026-03-21 09:59:35 INFO  base.BaseTest - Test Execution Started
+2026-03-21 09:59:37 INFO  base.BaseTest - Test Started: addToCartAndOrder
+2026-03-21 09:59:52 ERROR base.BaseTest - Test Failed: addToCartAndOrder
+2026-03-21 09:59:52 INFO  base.BaseTest - Driver fetched successfully
+2026-03-21 09:59:52 INFO  base.BaseTest - Screenshot captured
+2026-03-21 09:59:53 INFO  base.BaseTest - Test Execution Finished
+2026-03-21 10:35:53 INFO  base.BaseTest - Test Execution Started
+2026-03-21 10:35:56 INFO  base.BaseTest - Test Started: addToCartAndOrder
+2026-03-21 10:36:06 INFO  base.BaseTest - Test Passed: addToCartAndOrder
+2026-03-21 10:36:06 INFO  base.BaseTest - Test Execution Finished
