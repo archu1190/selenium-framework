@@ -1,0 +1,10 @@
+target/
+reports/
+logs/
+*.log
+*.png
+*.class
+.idea/
+.project
+.settings/
+bin/
