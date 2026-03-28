@@ -19,20 +19,20 @@ pipeline {
                 bat "mvn clean test -DsuiteXmlFile=testng.xml"
             }
         }
-
-        stage('Archive Reports') {
-            steps {
-                archiveArtifacts artifacts: 'reports/**', fingerprint: true
-            }
-        }
-        stage('Publish Report') {
-    		steps {
-	        	publishHTML([
-	            reportDir: 'reports',
-	            reportFiles: 'index.html',
-	            reportName: 'Extent Report'
-        ])
     }
-}
+
+    post {
+        always {
+            archiveArtifacts artifacts: 'reports/**', fingerprint: true
+
+            publishHTML(target: [
+                reportDir: 'reports',
+                reportFiles: 'index.html',
+                reportName: 'Extent Report',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: true
+            ])
+        }
     }
 }
