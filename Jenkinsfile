@@ -25,5 +25,14 @@ pipeline {
                 archiveArtifacts artifacts: 'reports/**', fingerprint: true
             }
         }
+        stage('Publish Report') {
+    		steps {
+	        	publishHTML([
+	            reportDir: 'reports',
+	            reportFiles: 'index.html',
+	            reportName: 'Extent Report'
+        ])
+    }
+}
     }
 }
